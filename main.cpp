@@ -8,7 +8,7 @@ std::vector<int> w(n,0);
 std::vector<int> r(n,0);
 for(int i = 0; i < n; i++){ 
     std::cin >> w[i];
-    std::cin >> r[n];
+    std::cin >> r[i];
 }
-
+std::cout << fuerzaBruta(n, R, w, r) << std::endl;
 }
