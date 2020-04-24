@@ -1,4 +1,8 @@
 #include"declaraciones.hpp"
+
+int nroElementos;
+std::vector<int> pesos;
+std::vector<int> resistencias;
 int main()
 {
 int n, R;
@@ -10,5 +14,9 @@ for(int i = 0; i < n; i++){
     std::cin >> w[i];
     std::cin >> r[i];
 }
-std::cout << fuerzaBruta(n, R, w, r) << std::endl;
+nroElementos = n;
+pesos = w;
+resistencias = r;
+std::cout << fuerzaBruta(n, R) << std::endl;
+std::cout << Backtracking(n, R) << std::endl;
 }

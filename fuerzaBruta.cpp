@@ -1,10 +1,8 @@
-#include<algorithm>
-#include<vector>
-
-//read only global
-int nroElementos;
-std::vector<int> pesos;
-std::vector<int> resistencias;
+#include"declaraciones.hpp"
+//read only global variables
+extern int nroElementos;
+extern std::vector<int> pesos;
+extern std::vector<int> resistencias;
 /*
  *Fuerza Bruta recursiva: 
  *resMax es la resistencia que queda en todo momento tanto del tuvo como de los elementos
@@ -25,10 +23,7 @@ int resuelveFuerzaBruta(int resMax, int indice){
     return std::max(loElijo, resuelveFuerzaBruta(resMax, indice+1));
 }
 
-int fuerzaBruta(int n, int R, const std::vector<int> &w, const std::vector<int> &r){
-    nroElementos = n;
-    pesos = w;
-    resistencias = r;    
+int fuerzaBruta(int n, int R){
     //valores iniciales para la recursion
     return resuelveFuerzaBruta(R, 0);
 }

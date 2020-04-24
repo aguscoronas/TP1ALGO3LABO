@@ -2,7 +2,10 @@
 #define FUNCIONES
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
-int fuerzaBruta(int n, int R, const std::vector<int> &w, const std::vector<int> &r);
+
+int fuerzaBruta(int n, int R);
+int Backtracking(int n, int R);
 
 #endif
