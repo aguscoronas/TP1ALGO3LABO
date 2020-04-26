@@ -19,4 +19,5 @@ pesos = w;
 resistencias = r;
 std::cout << fuerzaBruta(n, R) << std::endl;
 std::cout << Backtracking(n, R) << std::endl;
+std::cout << programacionDinamica(n, R) << std::endl;
 }
