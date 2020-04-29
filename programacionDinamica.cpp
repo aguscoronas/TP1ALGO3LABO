@@ -27,3 +27,4 @@ int programacionDinamica(int n, int R){
     
     return resuelvepDinamica(R, 0, columnas);
 } 
+

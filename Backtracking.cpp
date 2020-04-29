@@ -30,3 +30,4 @@ int Backtracking(int n, int R){
     //valores iniciales para la recursion
     return resuelveBacktracking(R, 0, 0);
 }
+
