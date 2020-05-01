@@ -21,17 +21,4 @@ std::cout << fuerzaBruta(n, R) << std::endl;
 std::cout << Backtracking(n, R) << std::endl;
 std::cout << programacionDinamica(n, R) << std::endl;
 
-tiempo(n, R, &fuerzaBruta);
-tiempo(n, R, &Backtracking);
-tiempo(n, R, &programacionDinamica);
 }
-
-//para realizar las mediciones de los algoritmos
-void tiempo(int n, int R, int (*funcion)(int, int)){
-    auto start = std::chrono::steady_clock::now();    
-    funcion(n, R);
-    auto end = std::chrono::steady_clock::now();
-    auto diff = end - start;
-
-    std::cout << std::chrono::duration <double, std::milli>(diff).count() << std::endl;
-} 
